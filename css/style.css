@@ -131,9 +131,6 @@ strong {
   font-weight: bolder;
 }
 
-small {
-  font-size: 80%;
-}
 
 sub,
 sup {
@@ -488,7 +485,7 @@ hr {
 
 small,
 .small {
-  font-size: 80%;
+  font-size:80%;
   font-weight: 400;
 }
 
@@ -616,6 +613,7 @@ pre code {
   margin-left: auto;
 }
 
+
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
@@ -632,6 +630,36 @@ pre code {
   .container, .container-sm, .container-md, .container-lg {
     max-width: 960px;
   }
+}
+/* Topbar Responsive Fix */
+@media (max-width: 370px) {
+    .container-fluid.bg-dark .row {
+        flex-direction: column;
+        text-align:center;
+    }
+    
+    .container-fluid.bg-dark .col-lg-6 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .container-fluid.bg-dark .d-inline-flex.align-items-center.text-white {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .container-fluid.bg-dark .d-inline-flex.align-items-center.text-white small {
+        margin: 2px 2px;
+    }
+    
+    .container-fluid.bg-dark .d-inline-flex.align-items-center:not(.text-white) {
+        justify-content: center;
+    }
+    
+    .container-fluid.bg-dark .text-white.px-2,
+    .container-fluid.bg-dark .text-white.pl-2 {
+        margin: 2px 5px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -9543,7 +9571,7 @@ p,
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
   color: #FFFFFF;
-  background: #FF4800;
+  background: #007bff;
 }
 
 @media (max-width: 991.98px) {
